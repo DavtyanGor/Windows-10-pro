@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../imgs/kali.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+}
+
+.desktop__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 92%;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop__boxes {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.desktop__item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.desktop__item-img {
+    width: 38px;
+    height: 38px;
+    user-select: none;
+}
+
+.desktop__item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.this-pc__subtitle {
+    color: #FFF;
+    font-weight: 100;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.cell__object:hover {
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid #FFF;
+    box-shadow: 0px 0px 4px #FFF;
+}
+.cell__object2:hover {
+    background-color: #436987ff;
+    border: 1px solid #FFF;
+    box-shadow: 0px 0px 4px #FFF;
+}
+
+.object__dragstart-active{
+    background-color: rgba(255, 255, 255, 0.250);
+}
+
+/*/////////////////Desktop //////////////*/
+.footer {
+    width: 100vw;
+    background-color: #242424;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu__list li {
+    list-style: none;
+}
+
+.fa-windows {
+    color: #E9E9E9;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.menu__list li {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.windows-icon:hover .fa-windows {
+    color: #429CE3;
+}
+
+.menu__list li:hover {
+    background-color: #383838;
+}
+
+.search-icon {
+    position: relative;
+}
+
+.search__circle {
+    border: 1.3px solid #E6E6E6;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+}
+
+.search__stick {
+    background-color: #E6E6E6;
+    width: 1px;
+    height: 9px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 10px;
+    left: 17px;
+}
+
+.edge__img,
+.docs__img,
+.vs__img {
+    width: 25px;
+    height: 25px;
+}
+
+.edge__img img,
+.docs__img img,
+.vs__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
